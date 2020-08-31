@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "texto-logo";
+    src: url("fonts/texto-logo.ttf");
+  }
+
 #menu-navegacion{display: none;}
 
 header{
@@ -151,4 +156,17 @@ footer{
 
 #encuentranos>div>div>p{
     font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    background-color: #071224;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>span{
+    font-family: "texto-logo";
+    color: #b8bece;
 }

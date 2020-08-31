@@ -6,6 +6,7 @@
 body{
     --alto-header: 3.5rem;
     --padding-header: 0 20px;
+    min-width: 320px;
 }
 
 header{
@@ -163,7 +164,7 @@ h2{
 
 footer{
     background-color: #071224;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
