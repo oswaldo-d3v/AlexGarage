@@ -1,0 +1,53 @@
+:root {
+    /****************** Colores de texto *****************/
+    --color-titulo-h1: #000;
+    --color-titulo-h2: #DB740B;
+    --color-titulo-h3: #000;
+    --color-titulo-h4: #000;
+
+    --color-texto: #53575A;
+
+    /************ Colores de texto alternativo ***********/
+
+    --color-titulo-h3-alterno: #FFF;
+    --color-texto-alterno: #FFF;
+
+    /****************** Flitros de colores ***************/
+
+    --filtro-oscuro: rgba(0, 0, 0, 0.8);
+
+    /****************** Colores de bloques ***************/
+    
+    --fondo-header: #FFF;
+    --fondo-footer: #071224;
+
+    /********************* Tipografias *******************/
+
+    --titulos : 'Permanent Marker', cursive;
+    --texto: 'Roboto', sans-serif;
+    
+    /**************** Tipografias alternas ***************/
+
+    --texto-alterno: 'Open Sans', sans-serif;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+p,span,a{
+    font-size: 14px;
+    font-family: var(--texto);
+    color: var(--color-texto);
+}
+
+.logo{
+    fill: red;
+}
