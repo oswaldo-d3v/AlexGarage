@@ -133,13 +133,13 @@ h2{
     color: #FFF;
 }
 
-#encuentranos>h3{
+#encuentranos>div>h3{
     text-align: center;
     margin-bottom: 20px;
     font-family: var(--titulos);
 }
 
-#encuentranos>div>p{
+#encuentranos>div>div>p{
     color: #FFF;
 }
 
