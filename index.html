@@ -13,19 +13,50 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script>
+
+        function readCookie(name) {
+
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+
+            for (var i = 0; i < ca.length; i++) {
+
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) {
+                    return decodeURIComponent(c.substring(nameEQ.length, c.length));
+                }
+
+            }
+
+            return null;
+
+        }
+
         idioma = function () {
             var ln = x = window.navigator.language || navigator.browserLanguage;
             if (ln.startsWith('es')) {
+                document.cookie = "lenguaje=es;expires=Thu, 12 Aug 2049 20:47:11 UTC;";
                 location.href = "inicio.html";
 
             } else {
+                document.cookie = "lenguaje=en;expires=Thu, 12 Aug 2049 20:47:11 UTC; ";
                 location.href = "home.html";
             }
-            console.log(ln);
-            console.log(document.getElementById("idioma").getAttribute('lang'));
         }
 
-        idioma();
+        setIdioma = function () {
+            console.log("ahbshbah");
+            if(readCookie("lenguaje")  == null){
+                idioma();
+            } else if(readCookie("lenguaje")  == "es"){
+                location.href = "inicio.html";
+            } else{
+                location.href = "home.html";
+            }
+        }
+
+        setIdioma();
     </script>
 </head>
 
